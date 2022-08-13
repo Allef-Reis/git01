@@ -1,9 +1,7 @@
+import { Repository } from "../model/IRepository";
+
 interface RepositoryItemProps {
-  repository: {
-    name: string;
-    description: string;
-    html_url: string;
-  };
+  repository: Repository
 }
 
 export function RepositoryItem(props: RepositoryItemProps) {
