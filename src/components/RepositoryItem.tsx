@@ -1,6 +1,7 @@
 import { Repository } from "../model/IRepository";
 
 interface RepositoryItemProps {
+  key: string;
   repository: Repository
 }
 
