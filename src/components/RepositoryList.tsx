@@ -21,15 +21,12 @@ export function RepositoryList() {
     <section className="repository-list">
       <h1> Lista de repositório </h1>
       <ul>
-        {repositories.map((repository) => {
-          // repositories esta sendo mapeado e o repository esta sendo alimentado pelo map
+        {repositories.map((i) => {
           return (
-            <RepositoryItem key={repository.name} repository={repository} />
-          ); // retornando estrutura do item e atualizando os parametros no repositoritem
+            <RepositoryItem key={i.name} repository={i} />
+          );
         })}
       </ul>
     </section>
   );
 }
-
-//hooks sao funcoes que comecam com use

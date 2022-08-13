@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "webpack serve",
-    "buid": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
     "css-loader": "^6.7.1",
